@@ -1,6 +1,6 @@
 # agdRtvStore
 
-## 🏦 Fullstackowa aplikacja sklepu internetowego AGD/RTV
+## Fullstackowa aplikacja sklepu internetowego AGD/RTV
 
 **Demo:**
 
@@ -9,7 +9,7 @@
 
 ---
 
-## ⚙️ Technologie
+##  Technologie
 
 ### Frontend
 
@@ -37,7 +37,7 @@
 
 ---
 
-## 🔪 Jak uruchomić projekt lokalnie
+##  Jak uruchomić projekt lokalnie
 
 ### 1. Klonowanie repozytorium
 
@@ -87,7 +87,7 @@ npm start
 
 ---
 
-## 📌 Funkcjonalności
+## Funkcjonalności
 
 * Rejestracja i logowanie użytkownika
 * Zabezpieczenia JWT
