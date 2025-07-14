@@ -6,6 +6,7 @@
 
 * 🔗 Frontend (React): [agd-rtv-store.vercel.app](https://agd-rtv-store.vercel.app)
 * 🔗 Backend (Express + MongoDB): [agd-backend-rjnn.onrender.com](https://agd-backend-rjnn.onrender.com)
+* Backend może chwilę się uruchamiać (Render usypia usługę po bezczynności).
 
 ---
 
