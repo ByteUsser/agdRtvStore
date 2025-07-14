@@ -1,0 +1,1 @@
+Fullstackowa aplikacja (frontend + backend) do zarządzania sklepem AGD/RTV
