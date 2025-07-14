@@ -1,0 +1,25 @@
+.home-container {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f8f9fa;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-top: 1rem;
+}
+
+.category-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
