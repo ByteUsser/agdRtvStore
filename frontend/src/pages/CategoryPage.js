@@ -21,7 +21,7 @@ const CategoryPage = () => {
         const backendCategoryName = categoryMap[categoryName.toLowerCase()] || categoryName;
 
         const response = await fetch(
-          `http://localhost:5001/api/products/category/${encodeURIComponent(backendCategoryName)}`
+          `${process.env.REACT_APP_API_URL}/api/products/category/${encodeURIComponent(backendCategoryName)}`
         );
         if (response.ok) {
           const data = await response.json();
@@ -54,7 +54,7 @@ const CategoryPage = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5001/api/cart/add', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/cart/add`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ const CategoryPage = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5001/api/products/${productId}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/products/${productId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`, 
@@ -111,7 +111,7 @@ const CategoryPage = () => {
               <img
                 src={
                   product.image
-                    ? `http://localhost:5001/uploads/${product.image}`
+                    ? `${process.env.REACT_APP_API_URL}/uploads/${product.image}`
                     : '/images/placeholder.png'
                 }
                 alt={product.name}
