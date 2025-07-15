@@ -13,7 +13,11 @@ console.log("Aktualny JWT_SECRET:", process.env.JWT_SECRET);
 
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://agd-rtv-store.vercel.app'],
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use((req, res, next) => {
