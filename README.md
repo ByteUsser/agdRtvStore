@@ -2,25 +2,25 @@
 
 ## 🏦 Fullstackowa aplikacja sklepu internetowego AGD/RTV
 
-Kompletny sklep internetowy z funkcjonalnościami takimi jak: rejestracja i logowanie użytkownika, autoryzacja JWT, dodawanie produktów do koszyka oraz komunikacja z backendem przez REST API.
+Prosty sklep internetowy stworzony jako projekt portfolio (MVP), z podstawową obsługą użytkownika – rejestracją, logowaniem i dynamicznym interfejsem frontowym opartym o React. Projekt pozwala zademonstrować umiejętność tworzenia aplikacji fullstack z autoryzacją, routingiem i połączeniem z bazą danych.
 
 ---
 
 ## 🔗 Demo
 
-* 🖥️ **Frontend (React):** [agd-rtv-store.vercel.app](https://agd-rtv-store.vercel.app)
+* 🖥️ **Frontend (React):** [agd-rtv-store.vercel.app](https://agd-rtv-store.vercel.app)  
 * ⚙️ **Backend (Express + MongoDB):** [agd-backend-rjnn.onrender.com](https://agd-backend-rjnn.onrender.com)
 
-> ℹ️ Backend hostowany na Render – może chwilę się uruchamiać po bezczynności (cold start).
+> ℹ️ Uwaga: Backend hostowany na Render — może uruchamiać się kilka sekund po bezczynności (tzw. cold start).
 
 ---
 
 ## 👤 Testowy użytkownik
 
-Aby przetestować logowanie bez potrzeby rejestracji:
+Aby przetestować działanie bez potrzeby rejestracji:
 
-- **Email:** `test@test.pl`  
-- **Hasło:** `test123`
+- **Email:** `ania@op.pl`  
+- **Hasło:** `ania`
 
 ---
 
@@ -32,7 +32,7 @@ Aby przetestować logowanie bez potrzeby rejestracji:
 - React Router
 - FontAwesome
 - JWT (dekodowanie tokenów)
-- Obsługa logowania / rejestracji / koszyka
+- Obsługa logowania / rejestracji
 - Komunikacja z backendem przez REST API
 
 ### 🟢 Backend
@@ -40,14 +40,14 @@ Aby przetestować logowanie bez potrzeby rejestracji:
 - Node.js + Express
 - MongoDB + Mongoose
 - Auth z JWT (logowanie, rejestracja, token)
-- Obsługa produktów, użytkowników, koszyka
-- CORS + Multer (obsługa plików)
-- Zmienne środowiskowe (.env)
+- Obsługa użytkowników
+- CORS
+- Zmienne środowiskowe (`.env`)
 
 ### ☁️ Deployment
 
 - **Vercel** – frontend
-- **Render** – backend (Node.js) + połączenie z MongoDB Atlas
+- **Render** – backend (Node.js)
 - **MongoDB Atlas** – baza danych w chmurze
 
 ---
@@ -59,3 +59,18 @@ Aby przetestować logowanie bez potrzeby rejestracji:
 ```bash
 git clone https://github.com/ByteUsser/agdRtvStore.git
 cd agdRtvStore
+```
+2. Zainstaluj zależności
+npm install
+
+3. Stwórz plik .env w folderze backend:
+MONGO_URI=mongodb+srv://agduser:agduser123@cluster0.wgqrxvi.mongodb.net/agdRtvStore?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=twoj_super_tajny_klucz
+
+4. Uruchom backend
+cd backend
+npm run dev
+
+5. Uruchom frontend
+cd ../frontend
+npm start
